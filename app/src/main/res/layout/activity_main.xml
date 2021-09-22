@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/top_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#0066ff"
+        android:shadowColor="#595959"
+        android:shadowRadius="1"
+        android:shadowDx="2.5"
+        android:shadowDy="1.1"
+        android:background="#C0C0C0"
+        android:text="3Dreams" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_name"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/top_image"
+                    android:contentDescription="Main logo picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/main_photo" />
+
+                <ImageView
+                    android:id="@+id/info_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top_image"
+                    android:padding="10dp"
+                    android:src="@drawable/icons8_info_24" />
+
+                <TextView
+                    android:id="@+id/about_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top_image"
+                    android:layout_toRightOf="@id/info_icon"
+                    android:paddingTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#404040"
+                    android:text="Info:" />
+
+                <TextView
+                    android:id="@+id/info1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/about_us"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18sp"
+                    android:textColor="#404040"
+                    android:text="  An authorized reseller of the 3D printing technology as well as provider of quality 3D modeling, scanning and printing with offices locally and delivery worldwide. 3Dreams has reasonable and acceptable prices among their market competitors and variety of modern features for 3D printing." />
+
+                <TextView
+                    android:id="@+id/info2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/info1"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18sp"
+                    android:textColor="#404040"
+                    android:text="  Cost varies between 0.18-0.35€ per each gram of material depending on the required accuracy and type of material. Generally, orders that have weight up to 100 grams are performed in one day. For more information visit the website." />
+
+                <TextView
+                    android:id="@+id/contacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/info2"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="bold"
+                    android:textColor="#404040"
+                    android:text="Contacts:" />
+
+                <ImageView
+                    android:id="@+id/phone_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/contacts"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingBottom="10dp"
+                    android:src="@drawable/icons8_phone_24" />
+
+                <ImageView
+                    android:id="@+id/website_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/phone_icon"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingBottom="10dp"
+                    android:src="@drawable/icons8_website_24" />
+
+                <ImageView
+                    android:id="@+id/clock_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/website_icon"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingBottom="15dp"
+                    android:src="@drawable/icons8_clock_24" />
+
+                <TextView
+                    android:id="@+id/phones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/phone_icon"
+                    android:layout_below="@id/contacts"
+                    android:paddingLeft="10dp"
+                    android:textSize="16dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="#404040"
+                    android:text="+380 (63) 806 85 80 — En / Fr / De\n+380 (68 / 95 / 73) 480 46 46" />
+
+                <TextView
+                    android:id="@+id/website_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/phones"
+                    android:layout_toRightOf="@id/website_icon"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="16dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="#404040"
+                    android:text="www.3dreams.com.ua/en/" />
+
+                <TextView
+                    android:id="@+id/work_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/website_text"
+                    android:layout_toRightOf="@id/clock_icon"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="16dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="#404040"
+                    android:text="Mon – Fri: 9:00am – 6:00pm\nSat, Sun: 12:00pm – 5:00pm" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
